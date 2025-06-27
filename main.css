@@ -53,14 +53,17 @@ table {
 body {
     height: 100vh;
     overflow: hidden;
-    width: 100vw;
-    padding: 10px;
+    padding: 15px;
+    margin: 0;
     background-color: #FFF6A1;
+    display: flex;
+    box-sizing: border-box;
 }
 
 .app {
-    flex-grow: 1;
     overflow: hidden;
+    width: 100%;
+    height: 100%;
 
     display: flex;
     justify-content: center;
@@ -69,6 +72,32 @@ body {
 
 #canvas {
     background-color: #FE9AC0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: bottom center;
+    animation: spin 25s linear infinite;
+}
+
+.triangle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 200vh solid #FFF6A1;
+    transform-origin: bottom center;
+}
+
+@keyframes spin {
+    0% { transform: translateX(-50%) rotate(0deg); }
+    100% { transform: translateX(-50%) rotate(360deg); }
 }
