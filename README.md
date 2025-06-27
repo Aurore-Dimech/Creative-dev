@@ -5,6 +5,7 @@ Ce projet a été réalisé par Aurore Dimech et Brunic Feyou.
 ## Description 
 
 Ce projet est un site internet présentant une affiche animée pour la nouvelle saison des Totally Spies!. Elle reprend donc les éléments liés à cet univers de manière attrayante.
+Vous pouvez trouver une version en ligne [ici](https://aurore-dimech.github.io/Creative-dev/).
 
 ## Installation et lancement du projet
 - Cloner le projet.
