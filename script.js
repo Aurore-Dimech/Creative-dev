@@ -55,3 +55,43 @@ function createTriangleCircle(containerSelector, triangleCount, spacing) {
 }
 
 createTriangleCircle('.container', 24, 50);
+
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+// const centerX = canvas.width / 2;
+// const centerY = canvas.height / 2;
+// const raduis = 150;
+
+// function drawSection(startAngle, endAngle, color) {
+//   ctx.beginPath();
+//   ctx.moveTo(width / 2 ,height / 2);
+//   ctx.arc(width/2, height/2, raduis, startAngle, endAngle);
+//   ctx.closePath();
+//   ctx.fillStyle = color;
+//   ctx.fill();
+// }
+
+
+// const colors = '#ff5ec1';
+// const sectionCount = colors.length;
+// const angleStep = (2 * Math.PI) / sectionCount;
+
+// for (let i = 0; i < sectionCount; i++) {
+//   drawSection(i, (i + 1), colors[i]);
+// }
+
+// ctx.beginPath();
+// ctx.arc(width/2, height/2, 60, 0, 2 * Math.PI);
+// ctx.fillStyle = '#e0e0f0';
+// ctx.shadowColor = '#ffffff';
+// ctx.shadowBlur = 10;
+// ctx.fill();
+// ctx.shadowBlur = 0;
+
+// ctx.beginPath();
+// ctx.arc(width/2, height/2, radius, 0, 2 * Math.PI);
+// ctx.lineWidth = 4;
+// ctx.strokeStyle = '#ffffff';
+// ctx.stroke();
