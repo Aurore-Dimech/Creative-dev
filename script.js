@@ -59,6 +59,40 @@ createTriangleCircle('.container', 24, 50);
 ////////////////////////////////////////////////////////////////////////////////
 
 
+document.addEventListener("DOMContentLoaded", () => {
+	const callBtn = document.querySelector(".call-btn");
+	const introScreen = document.querySelector(".intro-screen");
+	const compodrierMain = document.querySelector(".compodrier");
+	const title = document.querySelector(".title");
+  const flash = document.querySelector(".flash");
+  const sound = document.getElementById("callSound");
+
+	callBtn.addEventListener("click", () => {
+        flash.classList.add("active");
+        setTimeout(() => {
+          // Play sound during 5s
+            sound.play();
+          
+            flash.classList.add("hide");
+            introScreen.classList.add("hide");
+            compodrierMain.classList.add("animate-down");
+            title.classList.add("visible");
+        }, 400); 
+        setTimeout(() => {
+            flash.classList.remove("active", "hide");
+        }, 900); 
+    });
+});
+
+
+
+const mainTitle = document.querySelector(".title");
+setTimeout(() => {
+  mainTitle.classList.add("visible");
+}, 1000);
+
+
+
 
 // const centerX = canvas.width / 2;
 // const centerY = canvas.height / 2;
