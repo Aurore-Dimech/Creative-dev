@@ -56,8 +56,6 @@ function createTriangleCircle(containerSelector, triangleCount, spacing) {
 
 createTriangleCircle('.container', 24, 50);
 
-////////////////////////////////////////////////////////////////////////////////
-
 
 
 // const centerX = canvas.width / 2;
